@@ -9439,7 +9439,37 @@ th.hide-for-touch {
     display: none !important;
   }
 }
-/* line 42, ../scss/app.scss */
+/* line 41, ../scss/app.scss */
+.bar {
+  background: #008CBA;
+  width: 100%;
+  margin: 0 0 4rem 0;
+}
+/* line 45, ../scss/app.scss */
+.bar h1 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* line 50, ../scss/app.scss */
+.slider-bg {
+  background: transparent url("../img/slider-bg.png");
+}
+
+/* line 53, ../scss/app.scss */
 .card-title {
-  font-size: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* line 57, ../scss/app.scss */
+.range-slider.vertical-range {
+  display: block !important;
+  border: 1px solid #DDDDDD;
+  margin: 1.25rem auto;
+  position: relative;
+  -ms-touch-action: none;
+  display: inline-block;
+  height: 12.5rem;
+  width: 1rem;
 }

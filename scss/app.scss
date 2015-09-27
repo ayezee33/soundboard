@@ -38,7 +38,29 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
-
+.bar {
+  background: $primary-color;
+  width: 100%;
+  margin: 0 0 4rem 0;
+  h1 {
+    color: $white;
+    text-align: center;
+  }
+}
+.slider-bg {
+  background: transparent url('../img/slider-bg.png');
+}
 .card-title {
-  font-size: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+.range-slider.vertical-range {
+    display: block!important;
+    border: 1px solid #DDDDDD;
+    margin: 1.25rem auto;
+    position: relative;
+    -ms-touch-action: none;
+    display: inline-block;
+    height: 12.5rem;
+    width: 1rem;
 }
