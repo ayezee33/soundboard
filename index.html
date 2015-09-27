@@ -6,15 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
   </head>
   <body>
-    <nav class="navbar navbar-light bg-faded">
-      <div class="container">
-        <a class="navbar-brand" href="#">Soundboard</a>
-      </div>
-    </nav>
+
 
     <div class="container">
       <div class="row">
@@ -22,6 +16,13 @@
           <div class="card card-block" style="width: 20rem;">
             <h3 class="card-title">Crap</h3>
             <button class="btn btn-primary" onclick="document.getElementById('crap').play()">Play</button>
+              <div class="flipswitch">
+                  <input onclick="document.getElementById('crap').play()" type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+                  <label class="flipswitch-label" for="fs">
+                      <div class="flipswitch-inner"></div>
+                      <div class="flipswitch-switch"></div>
+                  </label>
+              </div>
             <audio id="crap" src="sounds/crap.mp3" type="audio/mp3">
           </div>
         </div>
