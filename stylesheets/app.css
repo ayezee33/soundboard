@@ -89,7 +89,7 @@ body {
 
 /* line 438, ../bower_components/foundation/scss/foundation/components/_global.scss */
 body {
-  background: #FFFFFF;
+  background: #333333;
   color: #222222;
   cursor: auto;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -5812,7 +5812,7 @@ ul.pagination li {
   display: block;
   height: 1rem;
   width: 100%;
-  background: #FAFAFA;
+  background: #888888;
 }
 /* line 134, ../bower_components/foundation/scss/foundation/components/_range-slider.scss */
 .range-slider.vertical-range {
@@ -5843,7 +5843,7 @@ ul.pagination li {
 }
 /* line 151, ../bower_components/foundation/scss/foundation/components/_range-slider.scss */
 .range-slider.radius {
-  background: #FAFAFA;
+  background: #888888;
   border-radius: 3px;
 }
 /* line 153, ../bower_components/foundation/scss/foundation/components/_range-slider.scss */
@@ -5857,7 +5857,7 @@ ul.pagination li {
 }
 /* line 155, ../bower_components/foundation/scss/foundation/components/_range-slider.scss */
 .range-slider.round {
-  background: #FAFAFA;
+  background: #888888;
   border-radius: 1000px;
 }
 /* line 157, ../bower_components/foundation/scss/foundation/components/_range-slider.scss */
@@ -5871,7 +5871,7 @@ ul.pagination li {
 }
 /* line 159, ../bower_components/foundation/scss/foundation/components/_range-slider.scss */
 .range-slider.disabled, .range-slider[disabled] {
-  background: #FAFAFA;
+  background: #888888;
   cursor: not-allowed;
   opacity: 0.7;
 }
@@ -5888,7 +5888,7 @@ ul.pagination li {
 
 /* line 164, ../bower_components/foundation/scss/foundation/components/_range-slider.scss */
 .range-slider-active-segment {
-  background: #e5e5e5;
+  background: #333333;
   border-bottom-left-radius: inherit;
   border-top-left-radius: inherit;
   display: inline-block;
@@ -6348,7 +6348,7 @@ ul.pagination li {
 }
 /* line 58, ../bower_components/foundation/scss/foundation/components/_switches.scss */
 .switch label {
-  background: #DDDDDD;
+  background: #4CAF50;
   color: transparent;
   cursor: pointer;
   display: block;
@@ -6417,7 +6417,7 @@ ul.pagination li {
 /* line 157, ../bower_components/foundation/scss/foundation/components/_switches.scss */
 .switch label {
   color: transparent;
-  background: #DDDDDD;
+  background: #4CAF50;
 }
 /* line 162, ../bower_components/foundation/scss/foundation/components/_switches.scss */
 .switch label:after {
@@ -7898,7 +7898,7 @@ p aside {
 /* Default header styles */
 /* line 252, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  color: #222222;
+  color: #FFFFFF;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -7909,7 +7909,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 262, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  color: #6f6f6f;
+  color: white;
   font-size: 60%;
   line-height: 0;
 }
@@ -7947,7 +7947,7 @@ h6 {
 /* line 276, ../bower_components/foundation/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: white;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -8107,7 +8107,7 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
-  color: #555555;
+  color: white;
 }
 /* line 408, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite:before {
@@ -8116,14 +8116,14 @@ blockquote cite:before {
 /* line 412, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
-  color: #555555;
+  color: white;
 }
 
 /* line 418, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f;
+  color: white;
 }
 
 /* Microformats */
@@ -9452,17 +9452,31 @@ th.hide-for-touch {
 }
 
 /* line 50, ../scss/app.scss */
+h3 {
+  text-align: center;
+}
+
+/* line 53, ../scss/app.scss */
+.switch input + label {
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 59, ../scss/app.scss */
 .slider-bg {
   background: transparent url("../img/slider-bg.png");
 }
 
-/* line 53, ../scss/app.scss */
+/* line 62, ../scss/app.scss */
 .card-title {
+  color: #FFFFFF;
   font-size: 14px;
   text-align: center;
 }
 
-/* line 57, ../scss/app.scss */
+/* line 67, ../scss/app.scss */
 .range-slider.vertical-range {
   display: block !important;
   border: 1px solid #DDDDDD;
@@ -9474,17 +9488,23 @@ th.hide-for-touch {
   width: 1rem;
 }
 
-/* line 67, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .blue-handle {
   background: #2196F3;
 }
 
-/* line 70, ../scss/app.scss */
+/* line 80, ../scss/app.scss */
 .green-handle {
   background: #4CAF50;
 }
 
-/* line 73, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 .purple-handle {
   background: #673AB7;
+}
+
+/* line 86, ../scss/app.scss */
+footer {
+  padding: 3rem 0;
+  text-align: center;
 }

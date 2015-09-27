@@ -47,10 +47,20 @@
     text-align: center;
   }
 }
+h3 {
+  text-align: center;
+}
+.switch input + label {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    margin: 0 auto;
+}
 .slider-bg {
   background: transparent url('../img/slider-bg.png');
 }
 .card-title {
+  color: $white;
   font-size: 14px;
   text-align: center;
 }
@@ -72,4 +82,8 @@
 }
 .purple-handle {
   background: $purple
+}
+footer {
+  padding: 3rem 0;
+  text-align: center;
 }
