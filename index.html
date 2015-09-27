@@ -1,123 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
   <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Crap</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('crap').play()">Play</button>
-              <div class="flipswitch">
-                  <input onclick="document.getElementById('crap').play()" type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
-                  <label class="flipswitch-label" for="fs">
-                      <div class="flipswitch-inner"></div>
-                      <div class="flipswitch-switch"></div>
-                  </label>
-              </div>
-            <audio id="crap" src="sounds/crap.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Oh I Say</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('ohISay').play()">Play</button>
-            <audio id="ohISay" src="sounds/oh-i-say.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">OMG</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('omg').play()">Play</button>
-            <audio id="omg" src="sounds/omg.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Laughing</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('laughing').play()">Play</button>
-            <audio id="laughing" src="sounds/laughing.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Ello</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('ello').play()">Play</button>
-            <audio id="ello" src="sounds/ello.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Stick It In The Drive</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('stick-it').play()">Play</button>
-            <audio id="stick-it" src="sounds/stick-it-in-the-drive.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Use Your Wand</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('wand').play()">Play</button>
-            <audio id="wand" src="sounds/use-your-wand.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Yeti Growl</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('yeti').play()">Play</button>
-            <audio id="yeti" src="sounds/yeti.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Mount Up</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('mountUp').play()">Play</button>
-            <audio id="mountUp" src="sounds/mount-up.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Derp</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('derp').play()">Play</button>
-            <audio id="derp" src="sounds/derp.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Donkey</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('donkey').play()">Play</button>
-            <audio id="donkey" src="sounds/donkey.mp3" type="audio/mp3">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card card-block" style="width: 20rem;">
-            <h3 class="card-title">Shut Up</h3>
-            <button class="btn btn-primary" onclick="document.getElementById('shutUp').play()">Play</button>
-            <audio id="shutUp" src="sounds/shut-up.mp3" type="audio/mp3">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer>
+    <section class="secondary-color">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-            <a href="http://www.freesfx.co.uk/">Attribution Link For Sounds</a>
+          <div class="small-4 columns">
+            <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+              <span class="range-slider-handle" role="slider" tabindex="0"></span>
+              <span class="range-slider-active-segment" onclick="document.getElementById('crap').play()"></span>
+              <input type="hidden">
+              <audio id="crap" src="sounds/crap.mp3" type="audio/mp3">
+            </div>
+            <h3 class="card-title">Crap</h3>
           </div>
-        </div>
-      </div>
-    </footer>
 
-    <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+          <div class="small-4 columns">
+            <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+              <span class="range-slider-handle" role="slider" tabindex="0"></span>
+              <span class="range-slider-active-segment" onclick="document.getElementById('ohISay').play()"></span>
+              <input type="hidden">
+              <audio id="ohISay" src="sounds/oh-i-say.mp3" type="audio/mp3">
+            </div>
+            <h3 class="card-title">Oh I Say</h3>
+          </div>
+          <div class="small-4 columns">
+
+            <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+              <span class="range-slider-handle" role="slider" tabindex="0"></span>
+              <span class="range-slider-active-segment" onclick="document.getElementById('omg').play()"></span>
+              <input type="hidden">
+            <audio id="omg" src="sounds/omg.mp3" type="audio/mp3">
+          </div>
+          <h3 class="card-title">OMG</h3>
+        </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="small-4 columns">
+                <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+                  <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                  <span class="range-slider-active-segment" onclick="document.getElementById('laughing').play()"></span>
+                  <input type="hidden">
+                  <audio id="laughing" src="sounds/laughing.mp3" type="audio/mp3">
+                </div>
+                <h3 class="card-title">Laughing</h3>
+            </div>
+              <div class="small-4 columns">
+
+                <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+                  <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                  <span class="range-slider-active-segment" onclick="document.getElementById('ello').play()"></span>
+                  <input type="hidden">
+                  <audio id="ello" src="sounds/ello.mp3" type="audio/mp3">
+                </div>
+                <h3 class="card-title">Ello</h3>
+              </div>
+              <div class="small-4 columns">
+
+                <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+                  <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                  <span class="range-slider-active-segment" onclick="document.getElementById('stickIt').play()"></span>
+                  <input type="hidden">
+                  <audio id="stickIt" src="sounds/stick-it-in-the-drive.mp3" type="audio/mp3">
+                </div>
+                <h3 class="card-title">Stick It In The Drive</h3>
+            </div>
+            </section>
+            <section>
+              <div class="container">
+                <div class="row">
+                  <div class="small-4 columns">
+                    <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+                      <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                      <span class="range-slider-active-segment" onclick="document.getElementById('wand').play()"></span>
+                      <input type="hidden">
+                      <audio id="wand" src="sounds/use-your-wand.mp3" type="audio/mp3">
+                    </div>
+                    <h3 class="card-title">Use Your Wand</h3>
+                  </div>
+                  <div class="small-4 columns">
+                    <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+                      <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                      <span class="range-slider-active-segment" onclick="document.getElementById('yeti').play()"></span>
+                      <input type="hidden">
+                      <audio id="yeti" src="sounds/yeti.mp3" type="audio/mp3">
+                    </div>
+                    <h3 class="card-title">Yeti Growl</h3>
+                  </div>
+                  <div class="small-4 columns">
+                    <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+                      <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                      <span class="range-slider-active-segment" onclick="document.getElementById('mountUp').play()"></span>
+                      <input type="hidden">
+                      <audio id="mountUp" src="sounds/mount-up.mp3" type="audio/mp3">
+                    </div>
+                    <h3 class="card-title">Mount Up</h3>
+                  </div>
+                </section>
+                <section>
+                  <div class="container">
+                    <div class="row">
+                      <div class="small-4 columns">
+                        <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+                          <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                          <span class="range-slider-active-segment" onclick="document.getElementById('derp').play()"></span>
+                          <input type="hidden">
+                          <audio id="derp" src="sounds/derp.mp3" type="audio/mp3">
+                        </div>
+                        <h3 class="card-title">Derp</h3>
+                      </div>
+                      <div class="small-4 columns">
+                        <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+                          <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                          <span class="range-slider-active-segment" onclick="document.getElementById('donkey').play()"></span>
+                          <input type="hidden">
+                          <audio id="donkey" src="sounds/donkey.mp3" type="audio/mp3">
+                        </div>
+                        <h3 class="card-title">Donkey</h3>
+                      </div>
+                      <div class="small-4 columns">
+                        <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+                          <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                          <span class="range-slider-active-segment" onclick="document.getElementById('shutUp').play()"></span>
+                          <input type="hidden">
+                          <audio id="shutUp" src="sounds/shut-up.mp3" type="audio/mp3">
+                        </div>
+                      </div>
+                      <h3 class="card-title">Shut Up</h3>
+                    </div>
+                  </div>
+                </section>
+
+                    <footer>
+                      <div class="container">
+                        <div class="row">
+                          <div class="full-small-4 columns">
+                            <a href="http://www.freesfx.co.uk/">Attribution Link For Sounds</a>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
